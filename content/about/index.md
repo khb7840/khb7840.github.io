@@ -6,7 +6,7 @@ extra.in_header = true
 
 ![Hyunbin Kim](avatar.jpg)
 
-Hyunbin Kim a PhD student in [SteineggerLab](https://steineggerlab.com/en/) in Seoul National University, South Korea.
+Hyunbin Kim is a PhD student in [SteineggerLab](https://steineggerlab.com/en/) in Seoul National University, South Korea.
 His expertise includes bioinformatics, cancer genomics, protein structure analysis, data visualization, and tool development.
 He is the developer and maintainer of [FIREVAT](https://github.com/cgab-ncc/FIREVAT), [Foldcomp](https://github.com/steineggerlab/foldcomp) and [Folddisco](https://github.com/steineggerlab/folddisco).
 
