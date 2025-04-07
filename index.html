@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Somewhere between bioinformatician and genomic researcher. Daydreaming coffee addict.">
+    <title>Hyunbin Kim</title>
+    
+    <link rel="stylesheet" href="https://hyunbinkim.com/style.css?h=effe7d04ae9bf3bd6770">
+    
+    
+    
+    
+</head>
+<body>
+    
+    <header class="space">
+        <h1>Hyunbin Kim</h1>
+        
+        
+        <nav class="header-links">
+            
+            <a href="mailto:khb7840@gmail.com">Mail</a>
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;khb7840&#x2F;HyunbinKim-CV&#x2F;blob&#x2F;a2dc0f96a9d467321cb603c46c2946b6ae289826&#x2F;pdf&#x2F;HyunbinKim_CV.pdf">CV</a>
+            
+            <a href="https:&#x2F;&#x2F;github.com&#x2F;khb7840">GitHub</a>
+            
+            <a href="https:&#x2F;&#x2F;bsky.app&#x2F;profile&#x2F;hbkgenomics.bsky.social">Bluesky</a>
+            
+            <a href="https:&#x2F;&#x2F;x.com&#x2F;hkgenomics">Twitter</a>
+            
+            <a href="https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user=kWeHVagAAAAJ&amp;hl=en">Google Scholar</a>
+            
+            <a href="https:&#x2F;&#x2F;orcid.org&#x2F;0000-0003-4662-3943">ORCID</a>
+            
+            
+            <a href="https:&#x2F;&#x2F;hyunbinkim.com&#x2F;about&#x2F;">About</a>
+            
+        </nav>
+        
+    </header>
+    
+    
+    
+    
+    <main>
+        
+        
+        <h2>Projects</h2>
+        <ul>
+            
+            <li><a href="https:&#x2F;&#x2F;hyunbinkim.com&#x2F;blog&#x2F;folddisco&#x2F;">Folddisco</a></li>
+            
+            <li><a href="https:&#x2F;&#x2F;hyunbinkim.com&#x2F;blog&#x2F;foldcomp&#x2F;">Foldcomp</a></li>
+            
+            <li><a href="https:&#x2F;&#x2F;hyunbinkim.com&#x2F;blog&#x2F;firevat&#x2F;">Firevat</a></li>
+            
+            <li><a href="https:&#x2F;&#x2F;hyunbinkim.com&#x2F;blog&#x2F;magnet&#x2F;">MagNet</a></li>
+            
+        </ul>
+        <p><a href="https:&#x2F;&#x2F;hyunbinkim.com&#x2F;blog&#x2F;">Archive</a></p>
+        
+    </main>
+    
+    
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://hyunbinkim.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://hyunbinkim.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.querySelector("html").classList;
+        const sessionTheme = sessionStorage.getItem("theme");
+
+        function setDark() {
+            cls.add("dark-mode");
+            cls.remove("light-mode");
+            sessionStorage.setItem("theme", "dark");
+        }
+        function setLight() {
+            cls.add("light-mode");
+            cls.remove("dark-mode");
+            sessionStorage.setItem("theme", "light");
+        }
+
+        if (sessionTheme === "dark") {
+            setDark();
+        } else if (sessionTheme === "light") {
+            setLight();
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            setDark();
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            setDark();
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            setLight();
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

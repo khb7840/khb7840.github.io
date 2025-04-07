@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Somewhere between bioinformatician and genomic researcher. Daydreaming coffee addict.">
+    <title>Hyunbin Kim | About</title>
+    
+    <link rel="stylesheet" href="https://hyunbinkim.com/style.css?h=effe7d04ae9bf3bd6770">
+    
+    
+    
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;hyunbinkim.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>About</h1>
+    
+    <div class="space"></div>
+    <p><img src="https://hyunbinkim.com/about/avatar.jpg" alt="Hyunbin Kim" /></p>
+<p>Hyunbin Kim is a PhD student in <a href="https://steineggerlab.com/en/">SteineggerLab</a> in Seoul National University, South Korea.
+His expertise includes bioinformatics, cancer genomics, protein structure analysis, data visualization, and tool development.
+He is the developer and maintainer of <a href="https://github.com/cgab-ncc/FIREVAT">FIREVAT</a>, <a href="https://github.com/steineggerlab/foldcomp">Foldcomp</a> and <a href="https://github.com/steineggerlab/folddisco">Folddisco</a>.</p>
+<h3 id="education-research-experience">Education &amp; Research experience</h3>
+<ul>
+<li>Ph.D in Bioinformatics, Seoul National University, South Korea (2021 - present)
+<ul>
+<li>Advisor: <a href="https://steineggerlab.com/en/">Prof. Martin Steinegger</a></li>
+</ul>
+</li>
+<li>Researcher, National Cancer Center, South Korea (2017 - 2020)
+<ul>
+<li>Principal Investigator: <a href="http://honglab.catholic.ac.kr">Prof. Dongwan Hong</a></li>
+</ul>
+</li>
+<li>Master of Science in Agricultural Genomics, Seoul National University, South Korea (2015 - 2017)
+<ul>
+<li>Advisor: <a href="http://www.riceblast.snu.ac.kr/">Prof. Yong-Hwan Lee</a></li>
+</ul>
+</li>
+<li>Bachelor of Science in Biological Sciences, Seoul National University, South Korea (2010 - 2015)</li>
+</ul>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://hyunbinkim.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://hyunbinkim.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.querySelector("html").classList;
+        const sessionTheme = sessionStorage.getItem("theme");
+
+        function setDark() {
+            cls.add("dark-mode");
+            cls.remove("light-mode");
+            sessionStorage.setItem("theme", "dark");
+        }
+        function setLight() {
+            cls.add("light-mode");
+            cls.remove("dark-mode");
+            sessionStorage.setItem("theme", "light");
+        }
+
+        if (sessionTheme === "dark") {
+            setDark();
+        } else if (sessionTheme === "light") {
+            setLight();
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            setDark();
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            setDark();
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            setLight();
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>
