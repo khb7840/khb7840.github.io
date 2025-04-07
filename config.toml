@@ -27,8 +27,11 @@ highlight_theme = "agola-dark"
 
 links = [
     { title = "Mail", href = "mailto:khb7840@gmail.com" },
+    { title = "CV", href = "https://github.com/khb7840/HyunbinKim-CV/blob/a2dc0f96a9d467321cb603c46c2946b6ae289826/pdf/HyunbinKim_CV.pdf"},
     { title = "GitHub", href = "https://github.com/khb7840" },
+    { title = "Bluesky", href = "https://bsky.app/profile/hbkgenomics.bsky.social" },
     { title = "Twitter", href = "https://x.com/hkgenomics" },
-    # { title = "Bluesky", href = "https://bsky.app/profile/hbkgenomics.bsky.social" }
+    { title = "Google Scholar", href = "https://scholar.google.com/citations?user=kWeHVagAAAAJ&hl=en" },
+    { title = "ORCID", href = "https://orcid.org/0000-0003-4662-3943" },
     # { title = "LinkedIn", href = "https://linkedin.com" }
 ]

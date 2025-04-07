@@ -130,3 +130,11 @@ table {
         background-color: var(--table-row);
     }
 }
+
+:root.light-mode .dark-only {
+    display: none;
+}
+
+:root.dark-mode .light-only {
+    display: none;
+}
