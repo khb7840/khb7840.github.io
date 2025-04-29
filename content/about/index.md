@@ -4,7 +4,7 @@ title = "About"
 extra.in_header = true
 +++
 
-![Hyunbin Kim](avatar.jpg)
+![Hyunbin Kim](avatar.png)
 
 Hyunbin Kim is a PhD student in [SteineggerLab](https://steineggerlab.com/en/) in Seoul National University, South Korea.
 His expertise includes bioinformatics, cancer genomics, protein structure analysis, data visualization, and tool development.

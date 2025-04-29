@@ -27,7 +27,7 @@ highlight_theme = "agola-dark"
 
 links = [
     { title = "Mail", href = "mailto:khb7840@gmail.com" },
-    { title = "CV", href = "https://github.com/khb7840/HyunbinKim-CV/blob/a2dc0f96a9d467321cb603c46c2946b6ae289826/pdf/HyunbinKim_CV.pdf"},
+    { title = "CV", href = "https://github.com/khb7840/HyunbinKim-CV/blob/main/pdf/HyunbinKim_CV.pdf"},
     { title = "GitHub", href = "https://github.com/khb7840" },
     { title = "Bluesky", href = "https://bsky.app/profile/hbkgenomics.bsky.social" },
     { title = "Twitter", href = "https://x.com/hkgenomics" },

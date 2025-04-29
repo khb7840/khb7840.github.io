@@ -25,7 +25,7 @@ It compresses the backbone atoms to 8 bytes and the side chain to additionally 4
 thus an averaged-sized protein of 350 residues requires ~6kb.
 Foldcomp efficient compressed format stores protein structures requiring only 13 bytes per residue, which reduces the required storage space by an order of magnitude compared to saving 3D coordinates directly. 
 We achieve this reduction by encoding the torsion angles of the backbone as well as the side-chain angles in a compact binary file format (FCZ).
-By adopting MMseqs2's database format, we could reduce the file number as well.
+By adopting [MMseqs2](https://mmseqs.com)'s database format, we could reduce the file number as well.
 
 ![foldcomp_logo](foldcomp_strong_marv.png)
 
