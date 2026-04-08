@@ -7,7 +7,7 @@ extra.in_header = true
 ![Hyunbin Kim](avatar.png)
 
 Hyunbin Kim received his PhD in 2025 and is currently a postdoctoral researcher in [SteineggerLab](https://steineggerlab.com/en/) at Seoul National University, South Korea.
-His expertise includes bioinformatics, cancer genomics, protein structure analysis, data visualization, and tool development.
+His expertise lies in massive protein structure data processing and developing scalable bioinformatics software, alongside bioinformatics, cancer genomics, protein structure analysis, and data visualization.
 He is the developer and maintainer of [FIREVAT](https://github.com/cgab-ncc/FIREVAT), [Foldcomp](https://github.com/steineggerlab/foldcomp) and [Folddisco](https://github.com/steineggerlab/folddisco).
 
 ### Education & Research experience

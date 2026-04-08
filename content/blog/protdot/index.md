@@ -13,3 +13,5 @@ taxonomies.tags = [
 [Example](https://hyunbinkim.com/protdot/)
 
 Protdot is a toy protein structure visualization tool for interactive exploration in the browser.
+
+![Protdot demo](demo.gif)
